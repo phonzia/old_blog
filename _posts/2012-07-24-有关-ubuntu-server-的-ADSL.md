@@ -1,0 +1,51 @@
+---
+layout: post
+title: 有关ubuntu-server的ADSL
+---
+&emsp;&emsp;装了一天终于把ubuntu的服务器版本装成功了，由于服务器版本是没有图形化操作界面的，所以就想用sudo apt-get install 装个桌面环境，突然蛋疼的发现，不会在命令模式下进行拨号上网，查了半天也没个解决方案，然后看到个redhat的adsl上网配置，按照上面配置了一下，果然上去了，分享如下：
+
+&emsp;&emsp;输入命令：sudo pppoeconf
+
+&emsp;&emsp;依照步骤提示进行，在输入用户名的时候注意把username清空後输入，否则可能会出现usernameXXXXX的现象。
+
+&emsp;&emsp;防止 ADSL 掉线
+
+&emsp;&emsp;在终端内输入命令：sudo gedit /etc/network/interfaces
+
+&emsp;&emsp;把下面的一段文字复制进去
+
+        # /etc/network/interfaces
+        # This file describes the network interfaces available on your system
+        # and how to activate them. For more information, see interfaces(5).
+
+        # The loopback network interface
+        auto lo
+        iface lo inet loopback
+
+        # This is a list of hotpluggable network interfaces.
+        # They will be activated automatically by the hotplug subsystem.
+        mapping hotplug
+        script grep
+        map eth1
+
+        # The primary network interface
+        iface eth1 inet static
+        address 10.0.0.139
+        netmask 255.255.255.0
+        network 10.0.0.0
+        broadcast 10.0.0.255
+        # dns-* options are implemented by the resolvconf package, if installed
+        dns-nameservers 211.162.32.1 211.162.32.20
+
+&emsp;&emsp;注意dns-nameservers 是你的dns服务器地址，如果有路由器的同志可以打开路由器设置看看，把路由器上的默认dns服务器贴上。
+
+&emsp;&emsp;ADSL命令
+
+&emsp;&emsp;拨号 ADSL  命令：sudo pon dsl-provider
+
+&emsp;&emsp;断开 ADSL  命令：sudo poff
+
+&emsp;&emsp;查看拨号日志 命令：sudo plog
+
+&emsp;&emsp;对于 拨号 ADSL 和 断开 ADSL 可以在菜单编辑器中依照以上命令行建立相应的快捷方式以方便拨号。 
+

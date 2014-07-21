@@ -61,6 +61,7 @@ boost::thread是boost的线程库，并且c++11的新线程库基本上也是参
 
 ## 3、 使用boost::bind的线程创建 ##
 boost::bind可以将函数和指定的参数绑定，并返回一个boost::function对象，相比普通自定义的函数对象，使用更加方便。具体的代码示例如下：
+
 	//boost_thread_hello.cpp
 	#include <boost/thread/thread.hpp>
 	#include <iostream>

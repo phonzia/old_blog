@@ -9,7 +9,7 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1440px;
   }
 }
 /**
@@ -59,7 +59,7 @@ a:hover {
  * /////////////////
  */
 div#container {
-    width: 700px;
+    width: 1024px;
     margin: auto;
 }
 

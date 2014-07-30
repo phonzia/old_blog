@@ -1,33 +1,10 @@
-name: 专注是唯一的救赎
+name: Simply Grey
 markdown: redcarpet
 pygments: true
-url: http://vinitkumar.me/white-paper
-paginate: 8
-description:     phonzia的博客
-intro: 这是phonzia的博客，如有问题，请联系phonzia@gmail.com
-logo:             logo.png
-disqus_shortname:
-# url: http://gotchacode.com
-#Comment out url when working locally to resolve base urls correctly
-#url:
-
-# Owner/author information
-owner:
-  name:           <phonzia>
-  avatar:         <image/me.jpg>
-  email:          <phonzia@gmail.com>
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  github:
-  stackexchange:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Links to include in top navigation
-# For external links add external: true
+github: https://www.github.com/exaem
+about: I am an independent developer from the sunny UK. I dabble in Ruby, play in C and I'm an avid systems administrator.
+urls:
+    - text: github
+      url: https://github.com/exaem
+    - text: email
+      url: mailto:exaem@exaem.co.uk

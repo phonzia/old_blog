@@ -1,10 +1,10 @@
-name: White Paper
+name: 专注是唯一的救赎
 markdown: redcarpet
 pygments: true
 url: http://vinitkumar.me/white-paper
 paginate: 8
-description:     Jekyll theme for Programmers
-intro: White Paper is a Jekyll theme most suited to be used on tech blogs that like their content to shine.
+description:     phonzia的博客
+intro: 这是phonzia的博客，如有问题，请联系phonzia@gmail.com
 logo:             logo.png
 disqus_shortname:
 # url: http://gotchacode.com
@@ -13,9 +13,9 @@ disqus_shortname:
 
 # Owner/author information
 owner:
-  name:           <your-name-here>
-  avatar:         <avatar-image-link>
-  email:          <your-email-address>
+  name:           <phonzia>
+  avatar:         <image/me.jpg>
+  email:          <phonzia@gmail.com>
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   github:

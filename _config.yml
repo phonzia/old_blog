@@ -1,10 +1,10 @@
-name: Simply Grey
+name: Phonzia zone
 markdown: redcarpet
 pygments: true
-github: https://www.github.com/exaem
-about: I am an independent developer from the sunny UK. I dabble in Ruby, play in C and I'm an avid systems administrator.
+github: https://www.github.com/phonzia
+about: This is phonzia's blog.
 urls:
     - text: github
-      url: https://github.com/exaem
+      url: https://github.com/phonzia
     - text: email
-      url: mailto:exaem@exaem.co.uk
+      url: mailto:phonzia@gmail.com

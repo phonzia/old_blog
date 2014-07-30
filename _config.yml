@@ -1,6 +1,8 @@
 name: Phonzia zone
 markdown: redcarpet
 pygments: true
+redcarpet:
+        extensions:["fenced_code_blocks", "tables", "highlight", "strikethrough"]
 github: https://www.github.com/phonzia
 about: This is phonzia's blog.
 urls:

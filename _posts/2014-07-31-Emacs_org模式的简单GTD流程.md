@@ -3,6 +3,9 @@ layout: post
 title: "Emacs org模式的简单GTD流程"
 ---
 
+Emacs org模式的简单GTD流程
+===============================
+
 ## intro
 最近转而使用emacs，虽然用来写代码也有几个星期的时间，但是emacs的很多功能都还没用起来，正好需要提高效率，所以尝试使用org模式的todo和agenda来进行GTD的管理。
 

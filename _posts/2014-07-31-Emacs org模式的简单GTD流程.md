@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Emacs org模式的简单GTD流程"
+---
+
+## intro
+最近转而使用emacs，虽然用来写代码也有几个星期的时间，但是emacs的很多功能都还没用起来，正好需要提高效率，所以尝试使用org模式的todo和agenda来进行GTD的管理。
+
+## 同步
+因为毕竟没有云笔记或者其他GTD软件一样的同步功能，所以采用金山快盘作为同步工具。并将文件添加到agenda文件列表。
+
+    (setq org-agenda-files (list "e:/快盘/GTD/task.org"))
+
+这样子，只要启动org-agenda，就能自动根据添加进来的文件，生成org-agenda-view，效果非常漂亮。
+
+## TODO
+添加TODO非常简单，可以使用org模式的分层结构，比如添加以下TODO：
+
+    * Collection
+    ** TODO Wash clothes
+
+在TODO行上，可以有很多TODO相关的命令可以执行
+
+    C-c C-t     切换TODO状态，循环选择
+    C-u C-c C-t 切换TODO状态，手工选择
+    C-c C-c     添加Tag
+    C-c C-s     添加Schedule
+    C-c C-d     添加Deadline
+    C-c .       添加时间戳
+    C-u C-c .   添加准确时间的时间戳
+    C-c C-w     移动到不同父节点
+
+在TODO行上，增加[%]，可以显示子节点的完成状态,对于项目任务非常有用
+
+TODO状态可以通过以下配置设置，这里我根据我个人需要进行了分类：
+
+    (setq org-todo-keywords '((type "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELLED")))
+
+## agenda
+目前我对agenda的配置只是添加了快捷键
+
+    (setq org-todo-keywords '((type "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELLED")))
+
+TODO中的大部分命令，在agenda视图中，也可以执行
+
+## GTD流程
+目前的简单流程如下：
+* 收集任务，并放入收集箱父节点
+* 定时为任务增加schedule和改变TODO状态
+* 根据schedule完成任务
+
+## 备注
+由于学习和实践时间短暂，流程比较简单，并且执行有点繁琐，将在后续学习中不断改善，并更新此文档。

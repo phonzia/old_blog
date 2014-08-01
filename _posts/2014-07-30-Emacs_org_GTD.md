@@ -39,6 +39,11 @@ TODO状态可以通过以下配置设置，这里我根据我个人需要进行�
 
     (setq org-todo-keywords '((type "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELLED")))
 
+20140801增加自动标记任务完成时间和提示记录任务完成note
+
+    (setq org-log-done 'time)
+    (setq org-log-done 'note)
+
 ## agenda
 目前我对agenda的配置只是添加了快捷键
 

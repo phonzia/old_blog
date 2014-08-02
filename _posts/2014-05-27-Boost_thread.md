@@ -10,6 +10,7 @@ boost::thread是boost的线程库，并且c++11的新线程库基本上也是参
 
 ## 1、 使用函数指针的线程创建 ##
 
+   ```c++
 	//boost_thread_hello.cpp
 	#include <boost/thread/thread.hpp>
 	#include <iostream>
@@ -23,6 +24,7 @@ boost::thread是boost的线程库，并且c++11的新线程库基本上也是参
       thrd.join();
       return 0;
 	}
+  ```
 
 按以下命令编译：
 

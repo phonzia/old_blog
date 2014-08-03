@@ -9,7 +9,7 @@ Thrift在Cpp中的使用
 -------------------
 定义一个简单的thrift文件如下：
 
-    ```thrift
+```thrift
     //hello.thrift
     namespace cpp test
     namespace java test
@@ -20,7 +20,8 @@ Thrift在Cpp中的使用
         string getKey(),
         string getValue()
     }
-    ```
+```
+ 
 上面的文件提供了一个Hello的服务，拥有两个函数接口getKey和getValue。
 
 2、生成代码

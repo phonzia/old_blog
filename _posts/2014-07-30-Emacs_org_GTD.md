@@ -12,7 +12,9 @@ Emacs org模式的简单GTD流程
 ## 同步
 因为毕竟没有云笔记或者其他GTD软件一样的同步功能，所以采用金山快盘作为同步工具。并将文件添加到agenda文件列表。
 
+```lisp
     (setq org-agenda-files (list "e:/快盘/GTD/task.org"))
+```
 
 这样子，只要启动org-agenda，就能自动根据添加进来的文件，生成org-agenda-view，效果非常漂亮。
 
@@ -37,17 +39,23 @@ Emacs org模式的简单GTD流程
 
 TODO状态可以通过以下配置设置，这里我根据我个人需要进行了分类：
 
+```lisp
     (setq org-todo-keywords '((type "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELLED")))
+```
 
 20140801增加自动标记任务完成时间和提示记录任务完成note
 
+```lisp
     (setq org-log-done 'time)
     (setq org-log-done 'note)
+```
 
 ## agenda
 目前我对agenda的配置只是添加了快捷键
 
+```lisp
     (setq org-todo-keywords '((type "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELLED")))
+```
 
 TODO中的大部分命令，在agenda视图中，也可以执行
 

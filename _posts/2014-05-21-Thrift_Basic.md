@@ -108,8 +108,8 @@ b．  转换成
 9、文件包含
 ----------------
 Thrift允许thrift文件包含，用户需要使用thrift文件名作为前缀访问被包含的对象，如：
+
     #include "tweet.thrift"
-    
     ...
     struct TweetSearchResult {
         1: list<tweet.Tweet> tweets;

@@ -19,6 +19,7 @@ Thrift在Cpp中的使用
         string getKey(),
         string getValue()
     }
+ 
 上面的文件提供了一个Hello的服务，拥有两个函数接口getKey和getValue。
 
 2、生成代码
@@ -31,6 +32,7 @@ Thrift在Cpp中的使用
     Hello.cpp  Hello.h  Hello_server.skeleton.cpp  test_constants.cpp  test_constants.h  test_types.cpp  test_types.h
 这里主要需要关注的是Hello_server.skeleton.cpp, 其中给出了一个简单的thrift server的框架。
 
+```c++
     class HelloHandler : virtual public HelloIf {
      public:
       HelloHandler() {
@@ -61,8 +63,11 @@ Thrift在Cpp中的使用
       server.serve();
       return 0;
     }
+```
+    
 这里需要做的，是补全HelloHandler。然后就可以通过简单的客户端来访问。这里给出简单的客户端代码:
 
+```c++
     int main(int argc, char** argv) {
       shared_ptr<TTransport> socket(new TSocket("localhost", 9090));
       shared_ptr<TTransport> transport(new TBufferTransport(socket));
@@ -80,5 +85,6 @@ Thrift在Cpp中的使用
         printf("ERROR: %s\n", tx.what());
       }
     }
+```
 
 需要注意的是，如果不是如生成的简单server框架一样使用TSimpleServer，而是使用非阻塞的TNonblockingServer，那么相应的客户端transport必须使用TFramedTransport而不是TBufferTransport。

@@ -10,6 +10,6 @@ github: https://www.github.com/phonzia
 about: This is phonzia's blog.
 urls:
     - text: github
-      url: https://github.com/phonzia
+      url: phonzia
     - text: email
       url: mailto:phonzia@gmail.com

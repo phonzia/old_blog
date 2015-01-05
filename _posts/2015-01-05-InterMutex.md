@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "¼òµ¥µÄ½ø³Ì¼äMutexºÍ¶ÁĞ´ËøÀàÊµÏÖ"
+title: "ç®€å•çš„è¿›ç¨‹é—´Mutexå’Œè¯»å†™é”ç±»å®ç°"
 ---
 #ShareLack.h
 
 ```c++
     #ifndef _SHARE_LOCK_H_
     #define _SHARE_LOCK_H_
-    //½ø³Ì¼ämutex,ÔÚ¸¸½ø³Ì¶¨Òå£¬forkÖ®ºó¼ÓËø½âËø¶Ô¸¸×Ó½ø³Ì¼äÓĞĞ§
+    //è¿›ç¨‹é—´mutex,åœ¨çˆ¶è¿›ç¨‹å®šä¹‰ï¼Œforkä¹‹ååŠ é”è§£é”å¯¹çˆ¶å­è¿›ç¨‹é—´æœ‰æ•ˆ
     class ShareMutex {
      public:
       ShareMutex::ShareMutex();
@@ -18,7 +18,7 @@ title: "¼òµ¥µÄ½ø³Ì¼äMutexºÍ¶ÁĞ´ËøÀàÊµÏÖ"
       pthread_mutex_t* m_pMutex;
     };
     
-    //½ø³Ì¼ä¶ÁĞ´Ëø,forkÖ®ºó¼ÓËø½âËø¶Ô¸¸×Ó½ø³Ì¼äÓĞĞ§
+    //è¿›ç¨‹é—´è¯»å†™é”,forkä¹‹ååŠ é”è§£é”å¯¹çˆ¶å­è¿›ç¨‹é—´æœ‰æ•ˆ
     class ShareRwlock {
      public:
       ShareRwlock::ShareRwlock();

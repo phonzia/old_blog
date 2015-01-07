@@ -10,7 +10,7 @@
 }
 
 code {
-    font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+    font-family:'Consolas','Courier', monospace;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

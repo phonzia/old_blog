@@ -1,4 +1,4 @@
-name: 人丑就该多读书，穷人就要多学习
+name: 人丑就该多读书，人穷就要多学习
 markdown: redcarpet
 redcarpet :
   extensions : ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlighter"]

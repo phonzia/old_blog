@@ -67,7 +67,7 @@ Thrift在Cpp中的使用
     
 这里需要做的，是补全HelloHandler。然后就可以通过简单的客户端来访问。这里给出简单的客户端代码:
 
-    {% highlight cpp %}
+{% highlight cpp %}
     int main(int argc, char** argv) {
       shared_ptr<TTransport> socket(new TSocket("localhost", 9090));
       shared_ptr<TTransport> transport(new TBufferTransport(socket));

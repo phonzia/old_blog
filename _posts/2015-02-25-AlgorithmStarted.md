@@ -21,7 +21,7 @@ title: "算法基础知识"
 ##插入排序分析
 下面是插入排序的一个简单的c++实现
 
-    ```c++
+{% highlight cpp %}
     void insert_sort(std::vector<int>& vec) {
       for (int i = 1; i < vec.size(); i++) {
         int key = vec[i];
@@ -35,7 +35,7 @@ title: "算法基础知识"
         vec[j] = key;
       }
     }
-    ```
+{% endhighlight %}
 
 这里有两个循环不变式，一个是外层循环的 i < vec.size()，我们可以来证明循环不变式的三个性质：
 1. 初始化 ：在第一次迭代开始之前，i = 1，由于vec不少于1个元素（不然就不用排序了），显然成立。

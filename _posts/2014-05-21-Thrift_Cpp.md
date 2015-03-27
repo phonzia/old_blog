@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thrift在Cpp中的使用"
+id: 3
 ---
 
 Thrift在Cpp中的使用

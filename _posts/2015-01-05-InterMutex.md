@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "简单的进程间Mutex和读写锁类实现"
+id: 7
 ---
 #ShareLack.h
 

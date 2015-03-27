@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Boost thread的使用--线程的创建"
-uid: 4
 ---
 
 boost::thread是boost的线程库，并且c++11的新线程库基本上也是参照boost::thread实现。本文是对boost::thread使用的简述。

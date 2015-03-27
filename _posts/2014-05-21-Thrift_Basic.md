@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Thrift 基本语法"
-uid: 2
 ---
 
 Thrift 基本语法

@@ -1,7 +1,4 @@
----
-layout: post
-title: "跑步随想"
-id: 8
+uid: 8
 ---
 
 ##跑步

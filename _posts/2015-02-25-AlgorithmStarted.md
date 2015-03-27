@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "算法基础知识"
-id: 10
+uid: 10
 ---
 
 #算法基础知识

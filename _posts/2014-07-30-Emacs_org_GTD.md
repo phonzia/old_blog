@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emacs org模式的简单GTD流程"
-id: 5
+uid: 5
 ---
 
 Emacs org模式的简单GTD流程

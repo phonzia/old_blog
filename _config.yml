@@ -4,7 +4,7 @@ markdown: redcarpet
 redcarpet :
   extensions : ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlighter"]
 permalink: /:year/:month/:title
-paginate: 5
+#paginate: 5
 highlighter : pygments
 pygments: true
 github: https://www.github.com/phonzia

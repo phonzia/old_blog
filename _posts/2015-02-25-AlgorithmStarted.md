@@ -22,19 +22,19 @@ title: "算法基础知识"
 下面是插入排序的一个简单的c++实现
 
 {% highlight cpp %}
-    void insert_sort(std::vector<int>& vec) {
-      for (int i = 1; i < vec.size(); i++) {
-        int key = vec[i];
-        //将vec[i]插入到已经排好序的vec[0...i-1]中
-        int j = i;
-        while(j > 0) {
-          if(key >= vec[j - 1])break;
-          vec[j] = vec[j - 1];
-          --j;
-        }
-        vec[j] = key;
-      }
+void insert_sort(std::vector<int>& vec) {
+  for (int i = 1; i < vec.size(); i++) {
+    int key = vec[i];
+    //将vec[i]插入到已经排好序的vec[0...i-1]中
+    int j = i;
+    while(j > 0) {
+      if(key >= vec[j - 1])break;
+      vec[j] = vec[j - 1];
+      --j;
     }
+    vec[j] = key;
+  }
+}
 {% endhighlight %}
 
 这里有两个循环不变式，一个是外层循环的 i < vec.size()，我们可以来证明循环不变式的三个性质：

@@ -10,7 +10,7 @@ boost::thread是boost的线程库，并且c++11的新线程库基本上也是参
 
 ## 1、 使用函数指针的线程创建 ##
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 //boost_thread_hello.cpp
 #include <boost/thread/thread.hpp>
 #include <iostream>
@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
 ## 2、 使用函数对象的线程创建 ##
 函数对象是通过重载()运算符，来使得类对象行为类似函数。一个简单的函数对象的定义和使用如下：
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 class FuncObj {
   public:
     void hello() {
@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 
 使用函数对象作为工作函数的boost::thread使用如下：
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 int main(int argc, char* argv[]) {
   FuncObj hello;
   boost::thread thrd(hello);
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]) {
 ## 3、 使用boost::bind的线程创建 ##
 boost::bind可以将函数和指定的参数绑定，并返回一个boost::function对象，相比普通自定义的函数对象，使用更加方便。具体的代码示例如下：
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 //boost_thread_hello.cpp
 #include <boost/thread/thread.hpp>
 #include <iostream>

@@ -32,7 +32,7 @@ Thrift在Cpp中的使用
     Hello.cpp  Hello.h  Hello_server.skeleton.cpp  test_constants.cpp  test_constants.h  test_types.cpp  test_types.h
 这里主要需要关注的是Hello_server.skeleton.cpp, 其中给出了一个简单的thrift server的框架。
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 class HelloHandler : virtual public HelloIf {
  public:
   HelloHandler() {
@@ -68,7 +68,7 @@ int main(int argc, char **argv) {
 
 这里需要做的，是补全HelloHandler。然后就可以通过简单的客户端来访问。这里给出简单的客户端代码:
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 int main(int argc, char** argv) {
   shared_ptr<TTransport> socket(new TSocket("localhost", 9090));
   shared_ptr<TTransport> transport(new TBufferTransport(socket));

@@ -21,7 +21,7 @@ title: "算法基础知识"
 ##插入排序分析
 下面是插入排序的一个简单的c++实现
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 void insert_sort(std::vector<int>& vec) {
   for (int i = 1; i < vec.size(); i++) {
     int key = vec[i];

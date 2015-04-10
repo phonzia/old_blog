@@ -59,3 +59,7 @@ body {
     font-size: 0.7em;
     float: right;
 }
+
+.content-mid {
+    margin:auto
+}

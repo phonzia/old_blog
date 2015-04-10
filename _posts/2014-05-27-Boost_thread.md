@@ -26,6 +26,7 @@ int main(int argc, char* argv[]) {
 }
 {% endhighlight %}
 
+<!--more-->
 按以下命令编译：
 
 	g++ boost_thread_hello.cpp -lboost_thread -lboost_system -o boost_thread_hello

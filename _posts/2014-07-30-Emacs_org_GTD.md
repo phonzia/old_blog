@@ -16,6 +16,7 @@ Emacs org模式的简单GTD流程
     (setq org-agenda-files (list "e:/快盘/GTD/task.org"))
 ```
 
+<!--more-->
 这样子，只要启动org-agenda，就能自动根据添加进来的文件，生成org-agenda-view，效果非常漂亮。
 
 ## TODO

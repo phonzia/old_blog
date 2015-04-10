@@ -16,6 +16,7 @@ Thrift 基本语法
 * string 一串编码未知的文本或二进制串
 需要注意的是，没有无符号整形。这是兼容多种语言所要求的。
 
+<!--more-->
 2、结构体
 ------------
 一个Thrift struct定义了一个用于多语言的通用对象，基本上相当于面向对象语言中的一个类。一个结构体的例子如下：
@@ -26,7 +27,7 @@ Thrift 基本语法
         3:double decimals,
         4:string name="thrifty"
     }
-    
+
 3、容器
 --------------
 Thrift支持三种容器：
@@ -51,7 +52,7 @@ Thrift支持三种容器：
         [throws (<exceptions>)]
         ...
     }
-    
+
 实例如下:
 
     service StringCache {
@@ -59,18 +60,18 @@ Thrift支持三种容器：
         string get(1:i32 key) throws (1:KeyNotFound knf),
         void delete(1:i32 key)
     }
-    
+
 6、枚举
 --------------
 可以像C/C++那样定义枚举类型，如：
 
     enum TweetType {
-        TWEET,       
-        RETWEET = 2, 
-        DM = 0xa,  
-        REPLY   
-    }        
- 
+        TWEET,
+        RETWEET = 2,
+        DM = 0xa,
+        REPLY
+    }
+
     struct Tweet {
         1: required i32 userId;
         2: required string userName;
@@ -79,7 +80,7 @@ Thrift支持三种容器：
         5: optional TweetType tweetType = TweetType.TWEET
         6: optional string language = "english"
     }
-    
+
 说明：
 * 编译器默认从0开始赋值
 * 可以赋予某个常量某个整数

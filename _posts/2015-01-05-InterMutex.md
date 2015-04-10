@@ -17,7 +17,7 @@ title: "简单的进程间Mutex和读写锁类实现"
      private:
       pthread_mutex_t* m_pMutex;
     };
-    
+
     //进程间读写锁,fork之后加锁解锁对父子进程间有效
     class ShareRwlock {
      public:
@@ -31,6 +31,7 @@ title: "简单的进程间Mutex和读写锁类实现"
     };
     #endif
 ```
+<!--more-->
 
 #ShareLock.cpp
 
@@ -56,14 +57,14 @@ title: "简单的进程间Mutex和读写锁类实现"
         throw TCException("ShareMutex::Lock() exception!");
       }
     }
-    
-    
+
+
     void ShareMutex::UnLock() {
       if(0 != pthread_mutex_unlock(m_pMutex)) {
         throw TCException("ShareMutex::UnLock() exception!");
       }
     }
-    
+
     ShareRwlock::ShareRwlock() {
       m_pRwlock = (pthread_rwlock_t *)mmap(NULL, sizeof(pthread_rwlock_t), PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
       pthread_rwlockattr_t attr_pub;
@@ -71,26 +72,26 @@ title: "简单的进程间Mutex和读写锁类实现"
       pthread_rwlockattr_setpshared( &attr_pub, PTHREAD_PROCESS_SHARED );
       pthread_rwlock_init( m_pRwLock, &attr_pub );
     }
-    
-    
+
+
     ShareRwlock::~ShareRwlock() {
       pthread_rwlock_destroy(m_pRwlock);
       munmap(m_pRwlock, sizeof(pthread_rwlock_t));
     }
-    
-    
+
+
     void ShareRwlock::WrLock() {
       if(0 != pthread_rwlock_wrlock( m_pRwLock )) {
         throw TCException("ShareRwlock::WrLock() exception!");
       }
     }
-    
+
     void ShareRwlock::RdLock() {
       if(0 != pthread_rwlock_rdlock( m_pRwLock )) {
         throw TCException("ShareRwlock::RdLock() exception!");
       }
     }
-    
+
     void ShareRwlock::UnLock() {
       if(0 != pthread_rwlock_unlock( m_pRwLock )) {
         throw TCException("ShareRwlock::UnLock() exception!");

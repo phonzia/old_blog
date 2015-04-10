@@ -15,7 +15,7 @@ body {
     color: #ee4444;
 }
 
-.sidebar {
+.sidebar-whole {
     float: left;
     position: fixed;
 }

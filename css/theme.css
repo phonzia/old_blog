@@ -26,7 +26,7 @@ body {
 }
 
 .sidebar a {
-    color: #428bca;
+    color: #0088CC;
 }
 
 .sidebar li {
@@ -43,9 +43,38 @@ body {
 }
 
 .well h1 {
-    color: #ee4444;
-    font-size: 1.3em;
+    color: #737373;
+    font-size: 200%;
 }
+
+.well h2 {
+    color: #A02D2F;
+    font-size: 180%;
+    padding-left: 5px;
+    border-left: 3px solid #A02D2F;
+    border-bottom: 1px solid #999;
+}
+
+.well h3 {
+    color: #008800;
+    font-size: 160%;
+    padding-left: 5px;
+    border-left: 2px solid #008800;
+    border-bottom: 1px solid #999;
+    margin-left: 3px
+}
+
+.well h4 {
+    color: #268BD3;
+    font-size: 130%;
+    padding-left: 5px;
+    border-left: 1px solid #268B03;
+    border-bottom: 1px dashed #999;
+    margin-left: 6px
+}
+
+
+
 
 .author {
     color: #ee4444;

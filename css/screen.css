@@ -23,7 +23,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: inherit;
 }
 
-header, section, footer, aside, nav, article, figure { 
+header, section, footer, aside, nav, article, figure {
   display: block;
 }
 
@@ -56,7 +56,7 @@ ul, ol {
   padding-left: 60px;
 }
 
-a, 
+a,
 a:visited {
   color: #333;
   text-decoration: none;
@@ -80,14 +80,14 @@ strong {
 /* = Welcome = */
 /* =========== */
 
-#welcome { 
+#welcome {
   background-color: #61AFBB;
   color: #244448;
   text-shadow: 0 1px 0 #A1B6BA;
   font-size: 18px;
 }
 
-#welcome a, 
+#welcome a,
 #welcome a:visited {
   color: #333;
   border-color: #333;
@@ -279,7 +279,7 @@ strong {
 #post aside .content {
   background-color: #3B3127;
   padding: 50px;
-  width: 850px; 
+  width: 850px;
 }
 
 #post aside a {
@@ -304,8 +304,8 @@ strong {
 }
 
 #disqus_thread .dsq-dc-logo {
-  display: none; 
-} 
+  display: none;
+}
 
 #disqus_thread .dsq-options {
   display: none;

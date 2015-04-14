@@ -1,5 +1,5 @@
 name: Phonzia
-description : 人丑就该多读书，人穷就要多学习.
+description : 专注是唯一的救赎
 markdown: redcarpet
 redcarpet :
   extensions : ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlighter"]
@@ -7,7 +7,6 @@ permalink: /:year/:month/:title
 #paginate: 5
 excerpt_separator: <!--more-->
 highlighter : pygments
-pygments: true
 github: https://www.github.com/phonzia
 about: This is phonzia's blog.
 urls:

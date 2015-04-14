@@ -5,7 +5,9 @@ layout: default
 {% for post in site.posts %}
 <div class="article">
     <div class="well">
-        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }} <span class="whole_content">>>> 全文</span></a></h1>
+        <div id="label">
+            <a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }} <span class="whole_content">>>> 全文</span></a>
+        </div>
         <div class="content">
             {{ post.excerpt }}
         </div>

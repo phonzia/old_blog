@@ -14,7 +14,9 @@
           </div>
         </div>
       </div>
-      <div class="pagination">
+    </div>
+    </div>
+     <div class="pagination">
         {% if page.next %}
         <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">上一页</a>
         {% endif %}
@@ -22,8 +24,20 @@
         <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">下一页</a>
         {% endif %}
       </div>
+    <div>
+          <p>相关文章：</p>
+          {% if page.tag %}
+              {% for post in site.posts %}
+                {% if post.tag == page.tag %}
+                    {% if post.url != page.url %}
+                        <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</p>
+                    {% endif %}
+                {% endif %}
+              {% endfor %}
+          {% endif %}
+      </div>
+
       {% include duoshuo.html %}
-    </div>
   </div>
 </div>
 <aside>

@@ -1,14 +1,10 @@
 ---
 layout: post
-title: "Boost thread的使用--线程的创建"
+title: "Boost thread创建线程"
+tag: [boost]
 ---
 
-boost::thread是boost的线程库，并且c++11的新线程库基本上也是参照boost::thread实现。本文是对boost::thread使用的简述。
-
-线程的创建
-==================
-
-## 1、 使用函数指针的线程创建 ##
+# 1、 使用函数指针的线程创建
 
 {% highlight cpp linenos %}
 //boost_thread_hello.cpp
@@ -35,7 +31,7 @@ int main(int argc, char* argv[]) {
 
 	Hello world, I'm a thread!
 
-## 2、 使用函数对象的线程创建 ##
+# 2、 使用函数对象的线程创建
 函数对象是通过重载()运算符，来使得类对象行为类似函数。一个简单的函数对象的定义和使用如下：
 
 {% highlight cpp linenos %}
@@ -66,7 +62,7 @@ int main(int argc, char* argv[]) {
 
 由于类对象可以带有成员，所以函数对象可以带有一些初始化数据，相比函数指针，更加灵活一些。
 
-## 3、 使用boost::bind的线程创建 ##
+# 3、 使用boost::bind的线程创建
 boost::bind可以将函数和指定的参数绑定，并返回一个boost::function对象，相比普通自定义的函数对象，使用更加方便。具体的代码示例如下：
 
 {% highlight cpp linenos %}

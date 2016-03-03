@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thrift 基本语法"
+tag: [Thrift]
 ---
 
 Thrift 基本语法

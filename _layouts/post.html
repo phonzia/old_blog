@@ -16,10 +16,10 @@
             </div>
             <div class="pagination">
                 {% if page.next %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">上一页</a>
+                <a  href="{{ site.baseurl}}{{ page.next.url }}" class="next">上一篇: {{page.next.title}}</a>
                 {% endif %}
                 {% if page.previous %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">下一页</a>
+                <a  href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">下一篇: {{page.previous.title}}</a>
                 {% endif %}
             </div>
             <div>

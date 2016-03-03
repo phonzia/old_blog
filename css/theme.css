@@ -47,6 +47,10 @@ body {
     font-size: 190%;
 }
 
+.well {
+    font-family:"Times New Roman",Georgia,Serif
+}
+
 .well h2 {
     color: #A02D2F;
     font-size: 180%;

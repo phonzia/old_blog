@@ -4,7 +4,9 @@ markdown: redcarpet
 redcarpet :
   extensions : ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlighter"]
 permalink: /:year/:month/:title
-#paginate: 5
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/page:num"
 excerpt_separator: <!--more-->
 highlighter : pygments
 github: https://www.github.com/phonzia

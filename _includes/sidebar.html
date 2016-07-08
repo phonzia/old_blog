@@ -4,14 +4,5 @@
 </div>
 
 <div class="sidebar well">
-    <h1>最近发表</h1>
-    <ul>
-        {% for post in site.posts limit:5 %}
-          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="sidebar well">
 {% include links-list.html %}
 </div>

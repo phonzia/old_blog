@@ -102,6 +102,23 @@ body {
     float:right;
 }
 
+.nav-custom {
+    background-color:#ED4E1B;
+    border-bottom:none;
+}
+
+.nav-button {
+    background-color:#ED4E1B;
+}
+
+.nav-button a{
+    color: white;
+}
+
+.nav-button a:hover{
+    color: black;
+}
+
 table {
     font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
     font-size:13px;

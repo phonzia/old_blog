@@ -1,10 +1,14 @@
 ---
 title: virtualenv和django的安装
 layout: post
+categories: ''
+tags: ''
 ---
 # 简介
 
 本文介绍 virtualenv 和在 virtualenv 环境下安装 Django. 本文均采用最简便方式安装，如果需要其他安装方式，请参考官方文档.
+
+<!--more-->
 
 # virtualenv 的安装和使用
 VirtualEnv用于在一台机器上创建多个独立的python运行环境，有利于隔离项目的第三方包依赖，比如不同项目使用不同版本的包，也可以为部署应用提供方便。

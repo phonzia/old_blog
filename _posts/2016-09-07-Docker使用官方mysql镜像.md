@@ -7,6 +7,8 @@ tags: ''
 # 简介
 本文简单介绍了如何使用 docker 在 macOS 上搭建 mysql 数据库环境，其中使用了docker官方的 mysql 镜像.
 
+<!--more-->
+
 # 安装 docker
 [docker的官网](http://www.docker.com/)现在提供了 mac 版本的 docker 安装文件下载. 只要简单下载安装就行，这里不再多说.
 

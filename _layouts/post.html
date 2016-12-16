@@ -8,7 +8,8 @@
         <div class="col-md-9">
             <div class="article">
                 <div class="well">
-                    <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
+                    <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h1>
+                    <p>更新时间:{{ page.date }}</p>
                     <div class="post-content">
                         {{ content }}
                     </div>

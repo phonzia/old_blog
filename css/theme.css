@@ -79,9 +79,9 @@ body {
 }
 
 #label a{
-    font-size: 170%;
+    font-size: 150%;
     font-style: normal;
-    color:#268BD3;
+    color:#00ADBA;
     margin-bottom:30px;
 }
 
@@ -98,8 +98,10 @@ body {
 }
 
 .whole_content {
+    color:white;
     font-size:0.6em;
     float:right;
+    background-color: #00ADBA;
 }
 
 .nav-custom {

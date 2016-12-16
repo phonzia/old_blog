@@ -9,7 +9,7 @@
             <div class="article">
                 <div class="well">
                     <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h1>
-                    <p>更新时间:{{ page.date }}</p>
+                    <p style="color:grey">更新日期 : {{ page.date | date: "%-Y-%m-%d" }}</p>
                     <div class="post-content">
                         {{ content }}
                     </div>

@@ -6,11 +6,11 @@ layout: default
 <div class="article">
     <div class="well">
         <div id="label">
-            <a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a>
+            <a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%-Y-%m-%d" }}   {{ post.title }}</a>
         </div>
         <div class="content">
             {{ post.excerpt }}
-            <a href="{{ site.baseurl}}{{ post.url }}"><span class="whole_content">>>> 阅读全文</span></a>
+            <a href="{{ site.baseurl}}{{ post.url }}"><span class="whole_content btn btn-default">>>> 阅读全文</span></a>
         </div>
     </div>
 </div>

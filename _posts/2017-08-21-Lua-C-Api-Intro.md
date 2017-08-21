@@ -4,7 +4,7 @@ title: " Lua C API 使用基础"
 tag: [Lua]
 ---
 # Lua C API 使用基础
-#Lua
+
 ## 简单的解析器例子
 参考《学习 Lua 程序设计》的例子，这里也用一个简单的解释器来开始学习 C API 的学习.
 ``` cpp
@@ -32,6 +32,7 @@ int main() {
     return 0;
 }
 ```
+<!--more-->
 
 头文件 `lua.hpp` 实际上是将使用 C API 所需的几个头文件都引入进来，内容如下：
 ``` cpp

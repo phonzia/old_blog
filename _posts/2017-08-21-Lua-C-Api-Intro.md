@@ -166,3 +166,35 @@ lua_rawgeti(L, -1, key); // 执行之后值被放置于栈顶
 lua_pushstring(L, value); // 将 value 入栈
 lua_rawseti(L, -2, key); // 入栈 value 之后，table 在 -2 的位置
 ```
+
+## 从 C 中调用 Lua
+### 一个简单函数的调用
+假设有以下 Lua 函数：
+``` lua
+function square(x)
+    return x^2;
+end
+```
+那么我们要调用它，需要写以下的 C 函数：
+``` cpp
+double square(double x) {
+    lua_getglobal(L, "square"); // 获取调用的函数
+    lua_pushnumber(L, x); // 压入参数
+
+    // 完成调用(一个参数，一个返回值)
+    if (lua_pcall(L, 1, 1, 0) != 0) {
+        // TODO 错误处理
+    }
+
+    if (!lua_isnumber(L, -1)) {
+        // TODO 错误处理
+    }
+
+    double z = lua_tonumber(L, -1);
+    lua_pop(L, -1);
+
+    return z;
+}
+```
+### 通用调用的编写
+借助模板元编程，我们可以实现自动类型推导，从而实现一个极为简洁的调用过程，这个实现可以参考[LuaBridge](https://github.com/vinniefalco/LUABridge) 中通过`LuaRef`获取函数和调用的过程。
